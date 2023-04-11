@@ -1,0 +1,156 @@
+/*font link https://kulture.gumroad.com/l/lugati*/
+@font-face {
+    font-family: "imported-font";
+    src: url(Fonts/Lugati\ BLD.otf) format("truetype");
+}
+p.customfont { 
+    font-family: "imported-font", Arial, Helvetica, sans-serif;
+}
+
+table {
+    border: 15px solid #123ce300;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  table th {
+    color: #f96d51;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background-color: #e2e2e2;
+  }
+
+a {
+    color: currentColor;
+  }
+
+a:hover{
+    color: #ffffff76;
+    transition: 0.3s;
+  }
+
+table tr:hover {
+  background-color: #f96d51;
+  color: #F0F0F0;
+  }
+
+  table tr {
+    color: #f96d51;
+    border-bottom: 5px solid #f96d51;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+
+
+  table {
+    font-size: 175%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+      text-align: right;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+
+section {
+    margin-top: 275px;
+    height: 100%;
+    background-color: #000000;
+    padding: 0%;
+  }
+
+body {
+    font-family: "imported-font";
+    line-height: 1.25;
+    padding: 8%;
+    background-color: #F0F0F0;
+    position: absolute;
+  }
+
+.div-1 {
+    height: 75%;
+    margin-top: 20%;
+  }
+
+.div-2 {
+    margin-top: 275px;
+    height: 100%;
+  }
+
+
+h1 {
+  color: #F74825;
+    font-size: 650%;
+    margin-bottom: -25px;
+}
+
+h2 {
+  color: #F74825;
+    font-size: 375%;
+}
+
+h3 {
+  color: #F74825;
+    font-size: 500%;
+    margin-bottom: -25px;
+}
+
+h4 {
+    font-size: 250%;
+    color:#f96d51
+}
+
+h6 {
+  color: #F74825;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 900%;
+    margin-bottom: -25px;
+}
